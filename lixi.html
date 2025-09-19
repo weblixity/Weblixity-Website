@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weblixity</title>
+    <link rel="icon" type="image/png" href="resorces/weblixity logo g s.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/freedom-2" rel="stylesheet">
+    <link rel="stylesheet" href="lixi.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+
+</head>
+<body class="relative">
+
+    <div id="mobileNavOverlay" class="fixed inset-0 bg-black bg-opacity-90 z-40 flex items-center justify-center hidden">
+    <div class="text-center">
+        <div class="nav-links mobile-nav-links flex flex-col space-y-4 en-text items-center w-full">
+            <a href="#home" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">HOME</a>
+            <a href="#services" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">SERVICES</a>
+            <a href="#projects" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">PROJECTS</a>
+            <a href="#about" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">ABOUT US</a>
+            <a href="#contact" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">CONTACT</a>
+        </div>
+        <div class="nav-links mobile-nav-links flex flex-col space-y-4 ar-text hidden items-center w-full">
+            <a href="#home" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">الرئيسية</a>
+            <a href="#services" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">الخدمات</a>
+            <a href="#projects" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">المشاريع</a>
+            <a href="#about" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">من نحن</a>
+            <a href="#contact" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">تواصل معنا</a>
+        </div>
+        <button id="closeMobileNav" class="mt-12 text-white text-2xl">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
+    
+
+    <div class="floating-blobs pointer-events-none fixed inset-0 z-0">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <div class="blob blob4"></div>
+    </div>
+
+    <!-- Navbar Section -->
+    <nav class="w-full flex items-center justify-between px-8 py-5 fixed top-0 left-0 z-50 bg-black bg-opacity-60 backdrop-blur-md">
+
+        <div class="flex items-center">
+            <img src="resorces/weblixity logo g.png" >
+        </div>
+
+        <button id="languageToggle" class="bg-transparent border border-[#66FF66] text-[#66FF66] px-4 py-2 rounded-full hover:bg-[#fffff9] hover:text-black transition-all duration-300">
+            <span class="en-text"><img src="resorces/translate.png" alt=""></span>
+            <span class="ar-text hidden"><img src="resorces/translate.png" alt=""></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen bg-hero flex flex-col justify-center items-center relative overflow-hidden">
+            <div class="w-logo text-[#66FF66] text-[300px] font-bold opacity-10"><img src="" alt=""></div>
+            
+            <div class="container mx-auto px-6 py-50 z-10">
+                <div class="glass-card hero-card max-w-7xl mx-auto p-10 md:p-16 relative overflow-hidden flex flex-col justify-center items-center" style="min-height:420px;">
+
+                    <div class="flex-1 flex flex-col justify-center items-center w-full">
+                <h1 class="text-5xl md:text-7xl font-bold text-center mb-10 neon-glow en-text">
+                    WEBLIXITY FOR MODERN <br class="hidden md:block" > <br> WEB SOLUTIONS
+                </h1>
+                <h1 class="text-5xl md:text-7xl font-bold text-center mb-10 neon-glow ar-text hidden leading-relaxed">
+                    ويبليكسيتي لحلول<br class="hidden md:block"> <br>المواقع العصرية
+                </h1>
+            </div>
+
+            <div class="w-full flex justify-center mt-auto hidden md:flex">
+                <div class="nav-links flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 en-text items-center w-full md:w-auto">
+                    <a href="#home" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">HOME</a>
+                    <a href="#services" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">SERVICES</a>
+                    <a href="#projects" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">PROJECTS</a>
+                    <a href="#about" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">ABOUT US</a>
+                    <a href="#contact" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">CONTACT</a>
+                </div>
+                <div class="nav-links flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 ar-text hidden items-center justify-center w-full md:w-auto">
+                    <a href="#home" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">الرئيسية</a>
+                    <a href="#services" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">الخدمات</a>
+                    <a href="#projects" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">المشاريع</a>
+                    <a href="#about" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">من نحن</a>
+                    <a href="#contact" class="nav-link text-white hover:text-[#66FF66] transition px-6 py-2">تواصل معنا</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="flex justify-center mt-20">
+                <a href="#services" class="scroll-down w-16 h-16 rounded-full border-2 border-[#66FF66] flex items-center justify-center text-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300">
+                    <i class="fas fa-chevron-down text-xl"></i>
+                </a>
+            </div>
+        
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="min-h-screen bg-grainy py-20 flex flex-col justify-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 neon-glow en-text fade-in">SERVICES</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 neon-glow ar-text hidden fade-in">الخدمات</h2>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mt-10">
+                <div class="service-card glass-card p-8 w-full md:w-1/3 max-w-md hover-glow fade-in" style="transition-delay: 0.2s;">
+                    <h3 class="text-2xl font-bold mb-4 text-[#66FF66] en-text">Develop full websites</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-[#66FF66] ar-text hidden">تطوير مواقع متكاملة</h3>
+                    <p class="text-gray-300 mb-6 en-text">
+                        A full website is a complete digital presence that represents your brand, business, or idea online. It includes multiple pages, features, and integrations tailored to your specific needs </p>
+                    <p class="text-gray-300 mb-6 ar-text hidden">هو حضور رقمي متكامل يمثل علامتك التجارية أو نشاطك التجاري أو فكرتك على الإنترنت. يتكوّن من عدة صفحات وخصائص مصممة حسب احتياجاتك مثل صفحة رئيسية، خدمات، تواصل، لوحة تحكم، وغيرها.</p>
+                    <button class="know-more bg-transparent border border-[#66FF66] text-[#66FF66] px-6 py-2 rounded-full hover:bg-[#66FF66] hover:text-black transition-all duration-300 en-text"onclick="location.href='#contact'">
+                        GET IN TOUCH
+                    </button>
+                    <button class="know-more bg-transparent border border-[#66FF66] text-[#66FF66] px-6 py-2 rounded-full hover:bg-[#66FF66] hover:text-black transition-all duration-300 ar-text hidden"onclick="location.href='#contact'">
+                        تواصل معنا
+                    </button>
+                </div>
+                <div class="service-card glass-card p-8 w-full md:w-1/3 max-w-md hover-glow fade-in" style="transition-delay: 0.1s;">
+                    <h3 class="text-2xl font-bold mb-4 text-[#66FF66] en-text">Develop landing pages</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-[#66FF66] ar-text hidden">تطوير صفحات هبوط</h3>
+                    <p class="text-gray-300 mb-6 en-text">A landing page is a standalone web page designed with a single focused objective typically to convert visitors into leads or customers. for marketing campaigns, product launches, or capturing user interest. </p>
+                    <p class="text-gray-300 mb-6 ar-text hidden">صفحة الهبوط هي صفحة ويب مستقلة تُستخدم لتحقيق هدف محدد، مثل جمع بيانات الزوار أو زيادة المبيعات. تُعد أداة فعّالة في الحملات التسويقية وإطلاق المنتجات والتفاعل مع العملاء المحتملين.</p>
+                    <button class="know-more bg-transparent border border-[#66FF66] text-[#66FF66] px-6 py-2 rounded-full hover:bg-[#66FF66] hover:text-black transition-all duration-300 en-text"onclick="location.href='#contact'">
+                        GET IN TOUCH
+                    </button>
+                    <button class="know-more bg-transparent border border-[#66FF66] text-[#66FF66] px-6 py-2 rounded-full hover:bg-[#66FF66] hover:text-black transition-all duration-300 ar-text hidden"onclick="location.href='#contact'">
+                            تواصل معنا
+                    </button>
+                </div>
+                
+                
+                <div class="service-card glass-card p-8 w-full md:w-1/3 max-w-md hover-glow fade-in" style="transition-delay: 0.3s;">
+                    <h3 class="text-2xl font-bold mb-4 text-[#66FF66] en-text">WEBSITES DESIGN</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-[#66FF66] ar-text hidden">تصميم مواقع</h3>
+                    <p class="text-gray-300 mb-6 en-text">
+                        Website design focuses on the visual appearance, layout, and user experience (UX) of your site. It’s the first impression visitors get of your brand — and it needs to be clear, attractive, and intuitive.</p>
+                    <p class="text-gray-300 mb-6 ar-text hidden">تصميم الموقع يركّز على المظهر العام، التخطيط، وتجربة المستخدم (UX) في موقعك. إنه الانطباع الأول الذي يحصل عليه الزائر عن علامتك، ويجب أن يكون واضحًا، جذابًا، وسهل الاستخدام.</p>
+                    <button class="know-more bg-transparent border border-[#66FF66] text-[#66FF66] px-6 py-2 rounded-full hover:bg-[#66FF66] hover:text-black transition-all duration-300 en-text"onclick="location.href='#contact'">
+                        GET IN TOUCH
+                    </button>
+                    <button class="know-more bg-transparent border border-[#66FF66] text-[#66FF66] px-6 py-2 rounded-full hover:bg-[#66FF66] hover:text-black transition-all duration-300 ar-text hidden"onclick="location.href='#contact'">
+                        تواصل معنا
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="min-h-screen py-20 flex flex-col justify-center bg-[#0a0a0a]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 neon-glow en-text fade-in" style="color:#ffffff;">PROJECTS</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 neon-glow ar-text hidden fade-in" style="color:#ffffff;">المشاريع</h2>
+            
+            <div class="projects-container">
+                <!-- English Projects -->
+                <div class="en-text flex flex-wrap justify-center gap-8">
+                                
+                    <div class="project-card glass-card" >
+                        <img src="resorces/yalla.png" alt="Project 4 Thumbnail">
+                        <h2>YALLA</h2>
+                        <p>Landing Page for collect first interested people in social app</p>
+                        
+                        <a href="https://1nader1.github.io/yalla/yalla.html" target="_blank" rel="noopener" class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300 inline-block px-6 py-2 rounded-lg mt-4 font-bold ">to the website</a>
+
+                    </div>
+                    <div class="project-card glass-card" >
+                        <img src="resorces/1qnp1-pic.jpg" alt="Project 4 Thumbnail">
+                        <h2>1qnp1 design</h2>
+                        <p>website for graphics designer to provide design sevices</p>
+                        <a href="https://1nader1.github.io/portfolio-web/index.html.html" target="_blank" rel="noopener" class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300 inline-block px-6 py-2 rounded-lg mt-4 font-bold">to the website</a>
+                    </div>
+                    <div class="project-card glass-card" >
+                        <img src="resorces/7.png" alt="Project 3 Thumbnail">
+                        <h2>Shawirma7</h2>
+                        <p>website for shawirma restaurant in amman</p>
+                        <a href="https://1nader1.github.io/shawirma7/7.html" target="_blank" rel="noopener" class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300 inline-block px-6 py-2 rounded-lg mt-4 font-bold">to the website</a>
+                    </div>
+                    <div class="project-card glass-card" >
+                        <img src="resorces/nn-pic.jpg" alt="Project 4 Thumbnail">
+                        <h2>NADER NIZAR PORTFOLIO</h2>
+                        <p>PERSONAL PORTOOLIO WEBSITE FOR DEVELOPER AN DESIGNER</p>
+                        <button class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300">to the website</button>
+                    </div>
+                    <div class="project-card glass-card">
+                        <img src="resorces/TOPONE-pic.jpg" alt="Project 4 Thumbnail">
+                        <h2>TOP ONE</h2>
+                        <p>WEBSITE FOR CLOTHES STORE IN SUADI ARABIA </p>
+                        <button class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300">to the website</button>
+                    </div>
+                </div>
+                
+                <!-- Arabic Projects -->
+                <div class="ar-text hidden flex flex-wrap justify-center gap-8">
+                    
+                                
+                    <div class="project-card glass-card" >
+                        <img src="resorces/yalla.png" alt="Project 4 Thumbnail">
+                        <h2>YALLA</h2>
+                        <p>صفحة هبوط يجمع اوائل المهتمين بتطبيق اجتماعي</p>
+                        <a href="https://1nader1.github.io/yalla/yalla.html" target="_blank" rel="noopener" class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300 inline-block px-6 py-2 rounded-lg mt-4 font-bold">الى الموقع</a>
+                    </div>
+                    <div class="project-card glass-card" >
+                        <img src="resorces/1qnp1-pic.jpg" alt="Project 4 Thumbnail">
+                        <h2>1qnp1 design</h2>
+                        <p>موقع تقديم خدمات للتصميم</p>
+                        <a href="https://1nader1.github.io/portfolio-web/index.html.html" target="_blank" rel="noopener" class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300 inline-block px-6 py-2 rounded-lg mt-4 font-bold">الى الموقع</a>
+                    </div>
+                    <div class="project-card glass-card" >
+                        <img src="resorces/7.png" alt="Project 3 Thumbnail">
+                        <h2>Shawirma7</h2>
+                        <p>موقع مطعم مختص بالشاورما</p>
+                        <a href="https://1nader1.github.io/shawirma7/7.html" target="_blank" rel="noopener" class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300 inline-block px-6 py-2 rounded-lg mt-4 font-bold">الى الموقع</a>
+                    </div>
+                    <div class="project-card glass-card" >
+                        <img src="resorces/nn-pic.jpg" alt="Project 4 Thumbnail">
+                        <h2>Nader Nizar Portfolio</h2>
+                        <p>موقع شخصي لمطور برمجيات ومصمم</p>
+                        <a href="https://1nader1.github.io/Nader-Nizar-Portfolio/NN.html" target="_blank" rel="noopener" class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300 inline-block px-6 py-2 rounded-lg mt-4 font-bold">الى الموقع</a>
+                    </div>
+                    <div class="project-card glass-card">
+                        <img src="resorces/TOPONE-pic.jpg" alt="Project 4 Thumbnail">
+                        <h2>TOP ONE</h2>
+                        <p>موقع لمحل ملابس في السعودية</p>
+                        <a href="https://1nader1.github.io/Top-one/top.html" target="_blank" rel="noopener" class="border border-[#66FF66] hover:bg-[#66FF66] hover:text-black transition-all duration-300 inline-block px-6 py-2 rounded-lg mt-4 font-bold">الى الموقع</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="min-h-screen py-20 flex flex-col  justify-center bg-gradient-to-b from-[#0a0a0a] to-[#0d1a0d]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 neon-glow en-text fade-in">ABOUT US</h2>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 neon-glow ar-text hidden fade-in">من نحن</h2>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <div class="flex flex-col items-center md:items-start fade-in" style="transition-delay: 0.1s;">
+                    <div class="flex items-center mb-8">
+                        <img src="resorces/weblixity logo g.png" class="logo-about">
+                    </div>
+                </div>
+                
+                <div class="glass-card p-8 max-w-2xl fade-in" style="transition-delay: 0.2s;">
+                    <p class="text-lg mb-6 en-text">
+                        We are a company dedicated to creating unique and impactful websites that help businesses and individuals express their vision and brand in a truly distinctive way. Our team of designers and developers combine creativity with technical excellence to deliver digital experiences that stand out.
+                    </p>
+                    <p class="text-lg mb-6 ar-text hidden">
+                        نحن شركة متخصصة في إنشاء مواقع إلكترونية فريدة وفعّالة تساعد الشركات والأفراد على التعبير عن رؤيتهم وهويتهم بأسلوب مميز. يجمع فريقنا من المصممين والمطورين بين الإبداع والتميز التقني لتقديم تجارب رقمية متميزة.
+                    </p>
+                    <p class="text-lg en-text">
+                        we're looking to become a trusted partner for businesses looking to establish or enhance their digital presence. Our approach combines strategic thinking with flawless execution.
+                    </p>
+                    <p class="text-lg ar-text hidden">
+                         نتطلع لنصبح شريكًا موثوقًا للشركات التي تسعى إلى إنشاء أو تعزيز وجودها الرقمي. يجمع نهجنا بين التفكير الاستراتيجي والتنفيذ الممتاز.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen py-20 flex flex-col justify-center bg-grainy">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-10 neon-glow en-text fade-in">ORDER YOUR WEBSITE</h2>
+            <p class=" text-center mb-20 neon-glow en-text hidden fade-in">Send your project details, and we will reach out within 24h</p>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-10 neon-glow ar-text hidden fade-in">اطلب موقعك</h2>
+            <p class=" text-center mb-20 neon-glow ar-text hidden fade-in">أرسل تفاصيل مشروعك وسنتواصل معك خلال 24 ساعة</p>
+            
+            <form action="https://formspree.io/f/xanjalow" method="POST" class="space-y-6">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                <div class="glass-card p-8 w-full md:w-1/2 max-w-xl fade-in" style="transition-delay: 0.1s;">
+                    
+                        <label >
+                            <div>
+                                <input type="text" name="name" placeholder="Name" class="form-input w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:border-[#66FF66] focus:outline-none en-text">
+                                <input type="text" name="الاسم" placeholder="الاسم" class="form-input w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:border-[#66FF66] focus:outline-none ar-text hidden">
+                            
+                            </div>
+                        </label>
+                        <label>
+                            <div>
+                                <input type="email" name="email" placeholder="Email" class="form-input w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:border-[#66FF66] focus:outline-none en-text">
+                                <input type="email" name="البريد الالكتروني" placeholder="البريد الإلكتروني" class="form-input w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:border-[#66FF66] focus:outline-none ar-text hidden">
+                            </div>
+                        </label>
+                        <label>
+                            <div>
+                                <input type="text" name="subject" placeholder="Prand Name" class="form-input w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:border-[#66FF66] focus:outline-none en-text">
+                                <input type="text" name="الموضوع" placeholder="اسم البراند" class="form-input w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:border-[#66FF66] focus:outline-none ar-text hidden">
+                            </div>
+                        </label>
+                        <div>
+                            <textarea name="message" placeholder="the details" rows="5" class="form-input w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:border-[#66FF66] focus:outline-none en-text"></textarea>
+                            <textarea name="الرسالة" placeholder="التفاصيل" rows="5" class="form-input w-full px-4 py-3 rounded-lg bg-transparent border border-gray-600 focus:border-[#66FF66] focus:outline-none ar-text hidden"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#66FF66] text-black font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all duration-300 en-text">
+                            SEND MESSAGE
+                        </button>
+                        <button type="submit" class="w-full bg-[#66FF66] text-black font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all duration-300 ar-text hidden">
+                            إرسال الرسالة
+                        </button>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            
+                
+                <!-- <div class="glass-card p-8 w-full md:w-1/3 max-w-md fade-in" style="transition-delay: 0.2s;">
+                    <div class="space-y-6">
+                        
+                        <div class="flex items-start space-x-4 en-text">
+                            <i class="fas fa-envelope text-[#66FF66] text-xl mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Email</h3>
+                                <p class="text-gray-300">weblixity@gmail.com</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="flex items-start gap-4 en-text">
+                            <i class="fab fa-instagram text-[#66FF66] text-xl mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">instagram</h3>
+                                <p class="text-gray-300"><a href="https://www.instagram.com/weblixity/" target="_blank">@weblixity</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 ar-text hidden">
+                            <i class="fas fa-envelope text-[#66FF66] text-xl mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">الايميل</h3>
+                                <p class="text-gray-300">weblixity@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 ar-text hidden">
+                            <i class="fab fa-instagram text-[#66FF66] text-xl mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">انستجرام</h3>
+                                <p class="text-gray-300"><a href="https://www.instagram.com/weblixity/" target="_blank">@weblixity</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black bg-opacity-70">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center">
+                <div class="logo-f"><img src="resorces/weblixity logo g.png" alt=""></div>
+                
+                <div class="flex space-x-6 mb-8">
+                    <!-- <a href="#" class="social-icon text-xl text-gray-400 hover:text-[#66FF66]"><i class="fab fa-linkedin-in"></i></a> -->
+                    <a href="https://www.instagram.com/weblixity/" target="_blank" class="social-icon text-xl text-gray-400 hover:text-[#66FF66]"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61577952342783" target="_blank" class="social-icon text-xl text-gray-400 hover:text-[#66FF66]"><i class="fab fa-facebook-f"></i></a>
+                    <!-- <a href="#" target="_blank" class="social-icon text-xl text-gray-400 hover:text-[#66FF66]"><i class="fab Email"></i></a> -->
+                </div>
+                    
+                    
+                <div class="nv footer flex space-x-4 mb-8 en-text ">
+                    <a href="#home" class="text-gray-400 hover:text-[#66FF66] transition">Home</a>
+                    <a class="text-gray-400">|</a>
+                    <a href="#services" class="text-gray-400 hover:text-[#66FF66] transition">Services</a>
+                    <a class="text-gray-400">|</a>
+                    <a href="#about" class="text-gray-400 hover:text-[#66FF66] transition">About </a>
+                    <a class="text-gray-400">|</a>
+                    <a href="#contact" class="text-gray-400 hover:text-[#66FF66] transition">Contact</a>
+                </div>
+                <div class=" nv footer flex justify-center mb-8 ar-text hidden gap-4 sm:gap-8 ">
+                    <a href="#home" class="text-gray-400 hover:text-[#66FF66] transition"> الرئيسية</a>
+                    <a class="text-gray-400">|</a>
+                    <a href="#services" class="text-gray-400 hover:text-[#66FF66] transition"> الخدمات</a>
+                    <a class="text-gray-400">|</a>
+                    <a href="#about" class="text-gray-400 hover:text-[#66FF66] transition">من نحن </a>
+                    <a class="text-gray-400">|</a>
+                    <a href="#contact" class="text-gray-400 hover:text-[#66FF66] transition">تواصل معنا</a>
+                </div>
+                <div class="foooter-caption text-center">
+                    <p class="text-gray-500 text-sm en-text">© Weblixity 2025. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm ar-text hidden">© ويبليكسيتي 2025. جميع الحقوق محفوظة.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav Button -->
+    <button id="mobileNavButton" class="hamburger fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full bg-[#66FF66] text-black flex items-center justify-center md:hidden">
+        <i class="fas fa-bars text-xl"></i>
+    </button>
+    <script src="lixi.js"></script>
+
+    
+</body>
+</html>
